@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+</head>
+<body style="font-family: Arial;">
+<h2 style="text-align:center;">Registration Form</h2>
+<form style="width:400px; margin:auto;">
+<!-- Name -->
+<label>Name:</label><br>
+<input type="text" name="name" required><br><br>
+<!-- Password -->
+<label>Password:</label><br>
+<input type="password" name="password" required><br><br>
+<!-- Email -->
+<label>E-mail ID:</label><br>
+<input type="text" name="email" required><br><br>
+<!-- Phone -->
+<label>Phone Number:</label><br>
+<input type="text" name="phone" required><br><br>
+<!-- Sex -->
+<label>Sex:</label><br>
+<input type="radio" name="sex" value="male"> Male
+<input type="radio" name="sex" value="female">
+Female<br><br>
+<!-- DOB -->
+<label>Date of Birth:</label><br>
+<select name="day">
+<option>Day</option>
+<script>
+for(let i=1; i<=31; i++)
+document.write(`<option>${i}</option>`);
+</script>
+</select>
+<select name="month">
+<option>Month</option>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+<option>Apr</option>
+<option>May</option>
+<option>Jun</option>
+<option>Jul</option>
+<option>Aug</option>
+<option>Sep</option>
+<option>Oct</option>
+<option>Nov</option>
+<option>Dec</option>
+</select>
+<select name="year">
+<option>Year</option>
+<script>
+for(let y=1980; y<=2025; y++)
+document.write(`<option>${y}</option>`);
+</script>
+</select>
+<br><br>
+<!-- Languages -->
+<label>Languages Known:</label><br>
+<input type="checkbox" name="lang" value="English"> English
+<input type="checkbox" name="lang" value="Telugu"> Telugu
+<input type="checkbox" name="lang" value="Hindi"> Hindi
+<input type="checkbox" name="lang" value="Tamil"> Tamil
+<br><br>
+<!-- Address -->
+<label>Address:</label><br>
+<textarea rows="4" cols="35"></textarea><br><br>
+<!-- Buttons -->
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
